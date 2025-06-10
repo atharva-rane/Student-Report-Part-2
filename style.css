@@ -1,0 +1,91 @@
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-page-content{
+    margin-top: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+    border: none;
+    border-top: 2px solid black;
+    margin: 1rem 0;
+}
+
+table tr,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    padding: 2rem;
+}
+
+.tb-btn {
+    padding: 8px 60px 8px 60px;
+}
+
+.add-btn {
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 1.5rem;
+}
+
+.add-form {
+    text-align: center;
+}
+
+.new-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newstd-details {
+    padding: 1rem;
+    border: 1px solid black;
+    height: auto;
+    width: 50rem;
+}
+
+.sub-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.sub-btn button{
+    position:st;
+    padding: 10px 60px 10px 60px;
+    margin-left: 1.5rem;
+}
+
+
+
+.edit-div ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.edit-div label {
+    width: 150px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.edit-div textarea {
+    width: 300px;
+    height: 30px;
+    resize: none;
+}

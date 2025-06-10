@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="home-page">
+    <h1>Student Details</h1>
+    <hr>
+    <div class="home-page-content">
+        <form method="get" action="/new"  class="add-form">
+            <button class="add-btn">Add New Student</button>
+        </form>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Birthdate</th>
+                <th>Grade</th>
+                <th>Remarks</th>      
+                <th>Edit Student</th>  
+                <th>Delete Student</th>     
+            </tr>
+
+            <%for(std of stds) {%>
+                <tr>
+                    <td><%=std.id%></td>
+                    <td><%=std.name%></td>
+                    <td><%=std.email%></td>
+                    <td><%=std.contact%></td>
+                    <td><%=std.birthdate%></td>
+                    <td><%=std.grade%></td>
+                    <td><%=std.remark%></td>
+                    <td>
+                        <form method="get" action="/student/<%=std.id%>/edit">
+                            <Button class="tb-btn">Edit</Button>
+                        </form>
+                    </td>
+                    <td>
+                        <form method="post" action="/student/<%= std.id %>?_method=DELETE">
+                            <Button class="tb-btn">Delete</Button>
+                        </form>
+                    </td>
+                </tr>
+            <%}%>
+        </table>
+</div>
+</body>
+</html>

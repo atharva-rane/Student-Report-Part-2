@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student Data</title>
+</head>
+
+<body>
+    <h1>Edit Student Data</h1>
+    <form method="post" action="/student/<%=student.id%>?_method=PATCH">
+        <div class="edit-list">
+            <ul >
+                <li >
+                    <label for="id">Studetn Id: </label>
+                    <textarea name="id" id="id"><%=student.id%></textarea>
+                    <hr>
+                </li>
+                <li>
+                    <label for="name">Student Name: </label>
+                    <textarea name="name" id="name"><%=student.name%></textarea>
+                    <hr>
+
+                </li>
+                <li>
+                    <label for="email">Email: </label>
+                    <textarea name="email" id="email"><%=student.email%></textarea>
+                    <hr>
+                </li>
+                <li>
+                    <label for="contact">Contact: </label>
+                    <textarea name="contact" id="contact"><%=student.contact%></textarea>
+                    <hr>
+                </li>
+                <li>
+                    <label for="birthdate">Birthdate: </label>
+                    <textarea name="birthdate" id="birthdate"><%=student.birthdate%></textarea>
+                    <hr>
+                </li>
+                <li>
+                    <label for="grade">Grade: </label>
+                    <textarea name="grade" id="grade"><%=student.grade%></textarea>
+                    <hr>
+                </li>
+                <li>
+                    <label for="remark">Remark: </label>
+                    <textarea name="remark" id="remark"><%=student.remark%></textarea>
+                    <hr>
+                </li>
+            </ul>
+        </div>
+            <div class="sub-btn">
+        <button>Modify Updates</button>
+    </div>
+    </form>
+
+</body>
+
+</html>
